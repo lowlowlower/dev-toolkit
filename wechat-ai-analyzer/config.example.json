@@ -1,0 +1,11 @@
+{
+  "gemini_api_key": "AIzaSyApuy_ax9jhGXpUdlgI6w_0H5aZ7XiY9vU",
+  "analyze_last_hours": 24,
+  "output_dir": "./reports",
+  "wechat_data_path": "",
+  "analysis_prompts": {
+    "daily_summary": "请分析以下微信聊天记录，生成一份日报，包括：\n1. 重要信息摘要\n2. 待办事项提取\n3. 情感趋势分析\n4. 重要联系人互动统计\n\n聊天记录：\n{messages}",
+    "custom": ""
+  }
+}
+

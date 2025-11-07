@@ -1,0 +1,64 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║         Docker Supabase 一键安装                          ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+
+【第一步】确保 Docker Desktop 正在运行
+
+
+【第二步】打开 PowerShell
+
+
+【第三步】进入项目目录
+cd D:\SDevolpment\github\环境营造
+
+
+【第四步】运行安装脚本
+.\INSTALL.ps1
+
+
+就这样！等待 5-10 分钟，所有服务会自动安装好。
+
+
+完成后运行：
+npm run dev
+
+
+然后访问：
+http://localhost:5173
+
+
+═══════════════════════════════════════════════════════════
+
+如果遇到错误：
+
+1. PowerShell 权限错误：
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+2. Docker 未运行：
+   打开 Docker Desktop
+
+3. 端口被占用：
+   netstat -ano | findstr "54322"
+   taskkill /PID <进程ID> /F
+
+═══════════════════════════════════════════════════════════
+
+管理命令：
+
+查看状态:  docker ps
+停止服务:  docker-compose down
+启动服务:  docker-compose up -d
+查看日志:  docker-compose logs -f
+
+═══════════════════════════════════════════════════════════
+
+详细文档：
+- START.md             (快速开始)
+- Docker安装说明.txt   (详细说明)
+
+═══════════════════════════════════════════════════════════
+
+
